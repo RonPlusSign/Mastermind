@@ -1,0 +1,49 @@
+<!-- Main form -->
+
+<h4>Click on a circle to change its color</h4><br>
+<form action='index.php' method='post'>
+    <div class='form-row'>
+        <div class='col'>
+            <select class='form-control' name='0' onchange='this.className=this.options[this.selectedIndex].className'>
+                <option class='circle red' value='red'></option>
+                <option class='circle green' value='green'></option>
+                <option class='circle blue' value='blue'></option>
+                <option class='circle yellow' value='yellow'></option>
+            </select>
+        </div>
+        <div class='col'>
+            <select class='form-control' name='1' onchange='this.className=this.options[this.selectedIndex].className'>
+                <option class='circle red' value='red'></option>
+                <option class='circle green' value='green'></option>
+                <option class='circle blue' value='blue'></option>
+                <option class='circle yellow' value='yellow'></option>
+            </select>
+        </div>
+        <div class='col'>
+            <select class='form-control' name='2' onchange='this.className=this.options[this.selectedIndex].className'>
+                <option class='circle red' value='red'></option>
+                <option class='circle green' value='green'></option>
+                <option class='circle blue' value='blue'></option>
+                <option class='circle yellow' value='yellow'></option>
+            </select>
+        </div>
+        <div class='col'>
+            <select class='form-control' name='3' onchange='this.className=this.options[this.selectedIndex].className'>
+                <option class='circle red' value='red'></option>
+                <option class='circle green' value='green'></option>
+                <option class='circle blue' value='blue'></option>
+                <option class='circle yellow' value='yellow'></option>
+            </select>
+        </div>
+
+        <!-- set the default color to the select tags -->
+        <script>
+            document.querySelectorAll('select').forEach(element => element.className = element.options[element.selectedIndex].className);
+        </script>
+
+
+        <div class='col'>
+            <button class='btn btn-primary' type='submit'> Try </button>
+        </div>
+    </div>
+</form>
