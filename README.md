@@ -8,4 +8,4 @@ To start the PHP server (for example using `localhost` and port 8000):
 php -S localhost:8000 -t YOUR-PROJECT-FOLDER
 ```
 
-![Mastermind example](MasterMind.PNG)
+![Mastermind example](Mastermind.PNG)
